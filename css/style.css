@@ -1,0 +1,95 @@
+/* RESET */
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* HEADER  */
+
+header {
+    width: 100%;
+    /* position em testes, caso dê merda volte ele pra absolute */
+    position: absute; 
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 2px solid #003459;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+header li a {
+    color: #003459ff;
+    font-size: 1.2em;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+    header img {
+        margin-bottom: 15px;
+    }
+}
+
+.perfil {
+    display: flex;
+    padding: 15px;
+    background-color: blueviole;
+}
+
+.perfil_text {
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    flex-direction: column;
+    font-size: 2.5em;
+    width: 50%;
+    height: ;
+    background-color: blu;
+}
+
+.perfil_text h1,span,p {
+    text-align: start;
+}
+
+.perfil_img {
+    padding: 0 5%;
+    width: 50%;
+    background-color: re;
+}
